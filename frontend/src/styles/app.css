@@ -1,0 +1,192 @@
+/* Reset des marges et des paddings */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilisation de la police Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff; /* Couleur du texte */
+}
+
+p {
+    color: #858585;
+    margin: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    right: 50px;
+}
+
+/* Style du conteneur principal */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    padding: 20px;
+    text-align: center; /* Centrer le texte */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer le contenu verticalement */
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center;
+}
+
+/* Style des boutons */
+.button {
+    background-color: #6f42c1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Espacement entre les boutons */
+    width: 200px;
+    border-radius: 60px;
+}
+
+.button:hover {
+    background-color: #5a3b8c;
+}
+
+/* Style pour les formulaires */
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6f42c1;
+    text-align: left;
+    width: 100%;
+    max-width: 360px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form select {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form button[type="submit"] {
+    width: 100%;
+    max-width: 360px;
+    background-color: #6f42c1;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espacement en haut du bouton */
+}
+
+.form button[type="submit"]:hover {
+    background-color: #5a3b8c;
+}
+
+/* Styles spécifiques pour les pages */
+
+/* Home.tsx */
+.home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6f42c1;
+}
+
+/* Host.tsx et Join.tsx */
+.host-container, .join-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto; /* Espacement autour du conteneur */
+}
+
+.host-title, .join-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6f42c1;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    .container, .form, .host-container, .join-container {
+        max-width: 100%;
+    }
+}
+
+.gradient_background {
+    background: linear-gradient(319deg, #0062ff, #f07aff, #cc00ff);
+    height: 100vh;
+    width: 100vw;
+
+    -webkit-animation: gradient_background 7s ease infinite;
+    -moz-animation: gradient_background 7s ease infinite;
+    -o-animation: gradient_background 7s ease infinite;
+    animation: gradient_background 7s ease infinite;
+}
+
+@-webkit-keyframes gradient_background {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes gradient_background {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes gradient_background {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes gradient_background {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
